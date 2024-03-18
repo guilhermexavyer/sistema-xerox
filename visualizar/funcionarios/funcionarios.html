@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Funcionários</h2>
+    <h3>Informe o funcionário e o período:</h3>
+    <form method="post" action="funcionarios.php">
+
+        <label>Funcionário:</label>
+        <select id="" name="nome" required>
+            <option value=""></option>
+            <option value="Ana Clara - Direção">Ana Clara - Direção</option>
+            <option value="Amanda - Informática">Amanda - Informática</option>
+            <option value="Andressa - Ensino Fundamental I">Andressa - Ensino Fundamental I</option>
+            <option value="Camila - Ensino Fundamental II">Camila - Ensino Fundamental II</option>
+            <option value="Carolyne - Dança">Carolyne - Dança</option>
+            <option value="Eliana - Biblioteca">Eliana - Biblioteca</option>
+            <option value="Fernanda - RH">Fernanda - RH</option>
+            <option value="Guilherme - Xerox">Guilherme - Xerox</option>
+            <option value="Jean Carlos - Informática">Jean Carlos - Informática</option>
+            <option value="Jéssica - Informática">Jéssica - Informática</option>
+            <option value="Luís Paulo - Ensino Médio">Luís Paulo - Ensino Médio</option>
+            <option value="Magda - Educação Infantil">Magda - Educação Infantil</option>
+            <option value="Mônica - Financeiro">Mônica - Financeiro</option>
+            <option value="Regiane - Secretaria">Regiane - Secretaria</option>
+            <option value="Saulo - Educação Física">Saulo - Educação Física</option>
+            <option value="Sebastiana - Pastoral">Sebastiana - Pastoral</option>
+            <option value="Valéria - Educação Física">Valéria - Educação Física</option>
+        </select>
+
+        <label for="data_inicio">Data Inicial:</label>
+        <input type="date" id="data_inicio" name="data_inicio" required>
+
+        <label for="data_fim">Data Final:</label>
+        <input type="date" id="data_fim" name="data_fim" required>
+
+        <input type="submit" name="submit" value="Listar">
+    </form>
+</body>
+</html>

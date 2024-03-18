@@ -1,11 +1,12 @@
 <?php
     require "../conexao.php";
     
+    $dt = $_POST['dt'];
     $turma = $_POST['turma'];
     $disciplina = $_POST['disciplina'];
     $qtd_copias = $_POST['qtd_copias'];
 
-    $sql = "INSERT INTO ensino_fundamental_2 (turma, disciplina, qtd_copias) VALUES ('$turma', '$disciplina', '$qtd_copias')";
+    $sql = "INSERT INTO ensino_fundamental_2 (dt, turma, disciplina, qtd_copias) VALUES ('$dt', '$turma', '$disciplina', '$qtd_copias')";
 
     if ($mysqli->query($sql) === TRUE) {
         echo "Dados inseridos com sucesso";

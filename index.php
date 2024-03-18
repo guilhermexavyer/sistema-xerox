@@ -14,6 +14,9 @@
     <form action="inserir/educacao_infantil.php" method="POST">
         <h2>Educação Infantil</h2>
 
+        <label>Data:</label>
+        <input type="date" name="dt" id="" required>
+
         <label>Turma:</label>
         <select id="" name="turma" required>
             <option value=""></option>
@@ -29,16 +32,16 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/educacao_infantil/maternal_1.php">Maternal I</a>
-    <a href="visualizar/educacao_infantil/maternal_2.php">Maternal II</a>
-    <a href="visualizar/educacao_infantil/jardim_1.php">Jardim I</a>
-    <a href="visualizar/educacao_infantil/jardim_2.php">Jardim II</a>
+    <a href="visualizar/educacao_infantil/educacao_infantil.html">Consultar</a>
 
     <br><br><br>
 
     <!-- ENSINO FUNDAMENTAL I -->
     <form action="inserir/ensino_fundamental_1.php" method="POST">
         <h2>Ensino Fundamental I</h2>
+
+        <label>Data:</label>
+        <input type="date" name="dt" id="" required>
 
         <label>Turma:</label>
         <select id="" name="turma" required>
@@ -56,17 +59,16 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/ensino_fundamental_1/1_ano.php">1º ano</a>
-    <a href="visualizar/ensino_fundamental_1/2_ano.php">2º ano</a>
-    <a href="visualizar/ensino_fundamental_1/3_ano.php">3º ano</a>
-    <a href="visualizar/ensino_fundamental_1/4_ano.php">4º ano</a>
-    <a href="visualizar/ensino_fundamental_1/5_ano.php">5º ano</a>
+    <a href="visualizar/ensino_fundamental_1/ensino_fundamental_1.html">Consultar</a>
 
     <br><br><br>
 
     <!-- ENSINO FUNDAMENTAL II -->
     <form action="inserir/ensino_fundamental_2.php" method="POST">
         <h2>Ensino Fundamental II</h2>
+
+        <label>Data:</label>
+        <input type="date" name="dt" id="" required>
 
         <label>Turma:</label>
         <select id="" name="turma" required>
@@ -102,16 +104,16 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/ensino_fundamental_2/6_ano/6_ano.html">6º ano</a>
-    <a href="visualizar/ensino_fundamental_2/7_ano/7_ano.html">7º ano</a>
-    <a href="visualizar/ensino_fundamental_2/8_ano/8_ano.html">8º ano</a>
-    <a href="visualizar/ensino_fundamental_2/9_ano/9_ano.html">9º ano</a>
+    <a href="visualizar/ensino_fundamental_2/ensino_fundamental_2.html">Consultar</a>
 
     <br><br><br>
     
     <!-- ENSINO MÉDIO -->
     <form action="inserir/ensino_medio.php" method="POST">
         <h2>Ensino Médio</h2>
+
+        <label>Data:</label>
+        <input type="date" name="dt" id="" required>
 
         <label>Turma:</label>
         <select id="" name="turma" required>
@@ -147,28 +149,36 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/ensino_medio/1_ano_em/1_ano_em.html">1º ano EM</a>
-    <a href="visualizar/ensino_medio/2_ano_em/2_ano_em.html">2º ano EM</a>
-    <a href="visualizar/ensino_medio/3_ano_em/3_ano_em.html">3º ano EM</a>
+    <a href="visualizar/ensino_medio/ensino_medio.html">Consultar</a>
 
     <br><br><br>
 
     <form action="inserir/funcionarios.php" method="POST">
         <h2>Funcionários</h2>
 
+        <label>Data:</label>
+        <input type="date" name="dt" id="" required>
+
         <label>Funcionário:</label>
         <select id="" name="nome" required>
             <option value=""></option>
             <option value="Ana Clara - Direção">Ana Clara - Direção</option>
+            <option value="Amanda - Informática">Amanda - Informática</option>
             <option value="Andressa - Ensino Fundamental I">Andressa - Ensino Fundamental I</option>
             <option value="Camila - Ensino Fundamental II">Camila - Ensino Fundamental II</option>
+            <option value="Carolyne - Dança">Carolyne - Dança</option>
+            <option value="Eliana - Biblioteca">Eliana - Biblioteca</option>
+            <option value="Fernanda - RH">Fernanda - RH</option>
             <option value="Guilherme - Xerox">Guilherme - Xerox</option>
-            <option value="Jean Carlos - Sala de Informática">Jean Carlos - Sala de Informática</option>
+            <option value="Jean Carlos - Informática">Jean Carlos - Informática</option>
+            <option value="Jéssica - Informática">Jéssica - Informática</option>
             <option value="Luís Paulo - Ensino Médio">Luís Paulo - Ensino Médio</option>
             <option value="Magda - Educação Infantil">Magda - Educação Infantil</option>
             <option value="Mônica - Financeiro">Mônica - Financeiro</option>
             <option value="Regiane - Secretaria">Regiane - Secretaria</option>
+            <option value="Saulo - Educação Física">Saulo - Educação Física</option>
             <option value="Sebastiana - Pastoral">Sebastiana - Pastoral</option>
+            <option value="Valéria - Educação Física">Valéria - Educação Física</option>
         </select>
 
         <label>Nº de cópias:</label>
@@ -176,5 +186,7 @@
 
         <input type="submit" value="Enviar">
     </form>
+
+    <a href="visualizar/funcionarios/funcionarios.html">Consultar</a>
 </body>
 </html>
