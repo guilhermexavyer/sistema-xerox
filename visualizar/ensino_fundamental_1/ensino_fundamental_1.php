@@ -58,6 +58,7 @@ require "../../conexao.php";
 </head>
 <body>
     <br>
-    <a href="../../index.php">Voltar</a>
+    <a href="../../index.php">Início</a>
+    <a href="educacao_infantil.html">Consulta</a>
 </body>
 </html>
