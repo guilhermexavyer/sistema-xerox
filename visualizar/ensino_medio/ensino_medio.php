@@ -1,6 +1,8 @@
 <?php
     require "../../conexao.php";
 
+    $mensagem = "";
+
     if (isset($_POST['submit'])) {
         $turma = $_POST['turma'];
         $disciplina = $_POST['disciplina'];
@@ -16,14 +18,14 @@
         $row_total = $resultado_total->fetch_assoc();
         $total_copias_turma = $row_total["total_copias_turma"];
 
-        echo "Total de cópias da turma $turma no período de $data_inicio a $data_fim: " . $total_copias_turma . "<br><br>";
+        echo "Total de cópias da disciplina $disciplina da turma $turma no período de $data_inicio a $data_fim: " . $total_copias_turma . "<br><br>";
 
         $sql = "SELECT * FROM ensino_medio WHERE turma = '$turma' AND disciplina = '$disciplina' AND dt BETWEEN '$data_inicio' AND '$data_fim' ORDER BY id DESC";
 
         $resultado = $mysqli->query($sql);
 
         if ($resultado->num_rows > 0) {
-            echo "<h2>Dados da disciplina $disciplina da turma $turma no período de $data_inicio a $data_fim:</h2>";
+            echo "<h2>Dados da turma $turma no período de $data_inicio a $data_fim:</h2>";
             echo "<table border='1'>
                     <tr>
                         <th>ID</th>
@@ -36,16 +38,15 @@
                 echo "<tr>
                         <td>".$row['id']."</td>
                         <td>".$row['dt']."</td>
-                        <td>".$row['turma']."</td>
                         <td>".$row['disciplina']."</td>
+                        <td>".$row['turma']."</td>
                         <td>".$row['qtd_copias']."</td>
                     </tr>";
             }
             echo "</table>";
         }
-        else
-        {
-            echo "Nenhum resultado encontrado para disciplina $disciplina da turma $turma no período de $data_inicio a $data_fim.";
+        else {
+            echo "Nenhum resultado encontrado na disciplina $disciplina da turma $turma no período de $data_inicio a $data_fim.";
         }
     }
 
@@ -58,10 +59,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualização de dados</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <br>
     <a href="../../index.php">Início</a>
-    <a href="educacao_infantil.html">Consulta</a>
+    <a href="ensino_medio.html">Consulta</a>
+
+    <form id="deleteForm" method="post" action="delete.php">
+        <h3>Remover registro</h3>
+
+        <label>ID:</label>
+        <input type="number" name="id" id="deleteID" required>
+
+        <input type="submit" value="Deletar">
+    </form>
+
+    <div id="mensagem"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('#deleteForm').submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: $(this).attr('action'),
+                    data: $(this).serialize(),
+                    success: function(response){
+                        $('#mensagem').html(response);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>

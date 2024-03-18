@@ -1,5 +1,7 @@
 <?php
-require "../../conexao.php";
+    require "../../conexao.php";
+
+    $mensagem = "";
 
     if (isset($_POST['submit'])) {
         $turma = $_POST['turma'];
@@ -40,8 +42,7 @@ require "../../conexao.php";
             }
             echo "</table>";
         }
-        else
-        {
+        else {
             echo "Nenhum resultado encontrado para a turma $turma no período de $data_inicio a $data_fim.";
         }
     }
@@ -55,10 +56,38 @@ require "../../conexao.php";
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Visualização de dados</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
     <br>
     <a href="../../index.php">Início</a>
-    <a href="educacao_infantil.html">Consulta</a>
+    <a href="ensino_fundamental_1.html">Consulta</a>
+
+    <form id="deleteForm" method="post" action="delete.php">
+        <h3>Remover registro</h3>
+
+        <label>ID:</label>
+        <input type="number" name="id" id="deleteID" required>
+
+        <input type="submit" value="Deletar">
+    </form>
+
+    <div id="mensagem"></div>
+
+    <script>
+        $(document).ready(function(){
+            $('#deleteForm').submit(function(e){
+                e.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: $(this).attr('action'),
+                    data: $(this).serialize(),
+                    success: function(response){
+                        $('#mensagem').html(response);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
