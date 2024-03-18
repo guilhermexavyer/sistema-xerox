@@ -5,11 +5,12 @@
 
     if (isset($_POST['submit'])) {
         $turma = $_POST['turma'];
+        $disciplina = $_POST['disciplina'];
         $data_inicio = $_POST['data_inicio'];
         $data_fim = $_POST['data_fim'];
 
-        $sql_total = "SELECT SUM(qtd_copias) AS total_copias_turma FROM educacao_infantil 
-                    WHERE turma = '$turma' 
+        $sql_total = "SELECT SUM(qtd_copias) AS total_copias_turma FROM ensino_medio 
+                    WHERE turma = '$turma' AND disciplina = '$disciplina'
                     AND dt BETWEEN '$data_inicio' AND '$data_fim'";
 
         $resultado_total = $mysqli->query($sql_total);
@@ -17,25 +18,27 @@
         $row_total = $resultado_total->fetch_assoc();
         $total_copias_turma = $row_total["total_copias_turma"];
 
-        echo "Total de cópias da turma $turma no período de $data_inicio a $data_fim: " . $total_copias_turma . "<br><br>";
+        echo "<h2>Total de cópias de $disciplina do $turma entre $data_inicio e $data_fim: $total_copias_turma</h2>" . "<br>";
 
-        $sql = "SELECT * FROM educacao_infantil WHERE turma = '$turma' AND dt BETWEEN '$data_inicio' AND '$data_fim' ORDER BY id DESC";
+        $sql = "SELECT * FROM ensino_medio WHERE turma = '$turma' AND disciplina = '$disciplina' AND dt BETWEEN '$data_inicio' AND '$data_fim' ORDER BY id DESC";
 
         $resultado = $mysqli->query($sql);
 
         if ($resultado->num_rows > 0) {
-            echo "<h2>Dados da turma $turma no período de $data_inicio a $data_fim:</h2>";
+            echo "<h2>Cópias de $disciplina do $turma entre $data_inicio e $data_fim:</h2>";
             echo "<table border='1'>
                     <tr>
                         <th>ID</th>
                         <th>Data</th>
                         <th>Turma</th>
+                        <th>Disciplina</th>
                         <th>Quantidade de Cópias</th>
                     </tr>";
             while ($row = $resultado->fetch_assoc()) {
                 echo "<tr>
                         <td>".$row['id']."</td>
                         <td>".$row['dt']."</td>
+                        <td>".$row['disciplina']."</td>
                         <td>".$row['turma']."</td>
                         <td>".$row['qtd_copias']."</td>
                     </tr>";
@@ -43,7 +46,7 @@
             echo "</table>";
         }
         else {
-            echo "Nenhum resultado encontrado para a turma $turma no período de $data_inicio a $data_fim.";
+            echo "Nenhuma cópia registrada no $turma de $disciplina no entre $data_inicio e $data_fim.";
         }
     }
 
@@ -59,11 +62,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <br>
-    <a href="../../index.php">Início</a>
-    <a href="educacao_infantil.html">Consulta</a>
-
-    <form id="deleteForm" method="post" action="delete.php">
+    <form id="delete_form" method="post" action="delete.php">
         <h3>Remover registro</h3>
 
         <label>ID:</label>
@@ -74,9 +73,13 @@
 
     <div id="mensagem"></div>
 
+    <br>
+    <a href="../../index.php">Início</a>
+    <a href="ensino_medio.html">Consulta</a>
+
     <script>
         $(document).ready(function(){
-            $('#deleteForm').submit(function(e){
+            $('#delete_form').submit(function(e){
                 e.preventDefault();
                 $.ajax({
                     type: 'POST',

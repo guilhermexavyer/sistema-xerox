@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consulta</title>
 </head>
 <body>
-    <h2>Ensino Médio</h2>
+    <h2>Ensino Fundamental II</h2>
     <h3>Informe a turma, a disciplina e o período:</h3>
-    <form method="post" action="ensino_medio.php">
+    <form method="post" action="ensino_fundamental_2.php" required>
         <label>Turma:</label>
         <select id="" name="turma">
             <option value=""></option>
-            <option value="1º ano EM">1º ano EM</option>
-            <option value="2º ano EM">2º ano EM</option>
-            <option value="3º ano EM">3º ano EM</option>
+            <option value="6º ano">6º ano</option>
+            <option value="7º ano">7º ano</option>
+            <option value="8º ano">8º ano</option>
+            <option value="9º ano">9º ano</option>
         </select>
 
         <label>Disciplina:</label>
         <select id="" name="disciplina" required>
             <option value=""></option>
             <option value="Arte">Arte</option>
-            <option value="Biologia">Biologia</option>
+            <option value="Ciências/Biologia">Ciências/Biologia</option>
+            <option value="Educação Física">Educação Física</option>
             <option value="Ensino Religioso">Ensino Religioso</option>
-            <option value="Espanhol">Espanhol</option>
-            <option value="Filosofia">Filosofia</option>
             <option value="Física">Física</option>
             <option value="Geografia">Geografia</option>
-            <option value="Gramática">Gramática</option>
             <option value="História">História</option>
             <option value="Inglês">Inglês</option>
-            <option value="Literatura">Literatura</option>
             <option value="Matemática">Matemática</option>
+            <option value="Matemática Financeira">Matemática Financeira</option>
+            <option value="Português">Português</option>
             <option value="Química">Química</option>
             <option value="Redação">Redação</option>
-            <option value="Sociologia">Sociologia</option>
+            <option value="Tecnologias Digitais">Tecnologias Digitais</option>
         </select>
 
         <label for="data_inicio">Data Inicial:</label>
@@ -45,5 +45,7 @@
 
         <input type="submit" name="submit" value="Listar">
     </form>
+
+    <a href="../../index.php">Início</a>
 </body>
 </html>

@@ -11,7 +11,7 @@
     ?>
 
     <!-- EDUCAÇÃO INFANTIL -->
-    <form action="inserir/educacao_infantil.php" method="POST">
+    <form action="insert/educacao_infantil.php" method="POST">
         <h2>Educação Infantil</h2>
 
         <label>Data:</label>
@@ -32,12 +32,12 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/educacao_infantil/educacao_infantil.html">Consultar</a>
+    <a href="select/educacao_infantil/educacao_infantil.html">Consultar</a>
 
     <br><br><br>
 
     <!-- ENSINO FUNDAMENTAL I -->
-    <form action="inserir/ensino_fundamental_1.php" method="POST">
+    <form action="insert/ensino_fundamental_1.php" method="POST">
         <h2>Ensino Fundamental I</h2>
 
         <label>Data:</label>
@@ -59,12 +59,12 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/ensino_fundamental_1/ensino_fundamental_1.html">Consultar</a>
+    <a href="select/ensino_fundamental_1/ensino_fundamental_1.html">Consultar</a>
 
     <br><br><br>
 
     <!-- ENSINO FUNDAMENTAL II -->
-    <form action="inserir/ensino_fundamental_2.php" method="POST">
+    <form action="insert/ensino_fundamental_2.php" method="POST">
         <h2>Ensino Fundamental II</h2>
 
         <label>Data:</label>
@@ -104,12 +104,12 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/ensino_fundamental_2/ensino_fundamental_2.html">Consultar</a>
+    <a href="select/ensino_fundamental_2/ensino_fundamental_2.html">Consultar</a>
 
     <br><br><br>
     
     <!-- ENSINO MÉDIO -->
-    <form action="inserir/ensino_medio.php" method="POST">
+    <form action="insert/ensino_medio.php" method="POST">
         <h2>Ensino Médio</h2>
 
         <label>Data:</label>
@@ -149,11 +149,11 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/ensino_medio/ensino_medio.html">Consultar</a>
+    <a href="select/ensino_medio/ensino_medio.html">Consultar</a>
 
     <br><br><br>
 
-    <form action="inserir/funcionarios.php" method="POST">
+    <form action="insert/funcionarios.php" method="POST">
         <h2>Funcionários</h2>
 
         <label>Data:</label>
@@ -187,6 +187,6 @@
         <input type="submit" value="Enviar">
     </form>
 
-    <a href="visualizar/funcionarios/funcionarios.html">Consultar</a>
+    <a href="select/funcionarios/funcionarios.html">Consultar</a>
 </body>
 </html>

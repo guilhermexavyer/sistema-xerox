@@ -3,19 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consulta</title>
 </head>
 <body>
-    <h2>Educação Infantil</h2>
+    <h2>Ensino Fundamental I</h2>
     <h3>Informe o a turma e o período:</h3>
-    <form method="post" action="educacao_infantil.php">
+    <form method="post" action="ensino_fundamental_1.php" required>
         <label>Turma:</label>
         <select id="" name="turma">
             <option value=""></option>
-            <option value="Maternal I">Maternal I</option>
-            <option value="Maternal II">Maternal II</option>
-            <option value="Jardim I">Jardim I</option>
-            <option value="Jardim II">Jardim II</option>
+            <option value="1º ano">1º ano</option>
+            <option value="2º ano">2º ano</option>
+            <option value="3º ano">3º ano</option>
+            <option value="4º ano">4º ano</option>
+            <option value="5º ano">5º ano</option>
         </select>
 
         <label for="data_inicio">Data Inicial:</label>
@@ -26,5 +27,7 @@
 
         <input type="submit" name="submit" value="Listar">
     </form>
+
+    <a href="../../index.php">Início</a>
 </body>
 </html>
