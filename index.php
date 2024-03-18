@@ -29,6 +29,11 @@
         <input type="submit" value="Enviar">
     </form>
 
+    <a href="visualizar/educacao_infantil/maternal_1.php">Maternal I</a>
+    <a href="visualizar/educacao_infantil/maternal_2.php">Maternal II</a>
+    <a href="visualizar/educacao_infantil/jardim_1.php">Jardim I</a>
+    <a href="visualizar/educacao_infantil/jardim_2.php">Jardim II</a>
+
     <br><br><br>
 
     <!-- ENSINO FUNDAMENTAL I -->
@@ -50,6 +55,12 @@
 
         <input type="submit" value="Enviar">
     </form>
+
+    <a href="visualizar/ensino_fundamental_1/1_ano.php">1º ano</a>
+    <a href="visualizar/ensino_fundamental_1/2_ano.php">2º ano</a>
+    <a href="visualizar/ensino_fundamental_1/3_ano.php">3º ano</a>
+    <a href="visualizar/ensino_fundamental_1/4_ano.php">4º ano</a>
+    <a href="visualizar/ensino_fundamental_1/5_ano.php">5º ano</a>
 
     <br><br><br>
 
@@ -91,6 +102,11 @@
         <input type="submit" value="Enviar">
     </form>
 
+    <a href="visualizar/ensino_fundamental_2/6_ano/6_ano.html">6º ano</a>
+    <a href="visualizar/ensino_fundamental_2/7_ano/7_ano.html">7º ano</a>
+    <a href="visualizar/ensino_fundamental_2/8_ano/8_ano.html">8º ano</a>
+    <a href="visualizar/ensino_fundamental_2/9_ano/9_ano.html">9º ano</a>
+
     <br><br><br>
     
     <!-- ENSINO MÉDIO -->
@@ -130,6 +146,10 @@
 
         <input type="submit" value="Enviar">
     </form>
+
+    <a href="visualizar/ensino_medio/1_ano_em/1_ano_em.html">1º ano EM</a>
+    <a href="visualizar/ensino_medio/2_ano_em/2_ano_em.html">2º ano EM</a>
+    <a href="visualizar/ensino_medio/3_ano_em/3_ano_em.html">3º ano EM</a>
 
     <br><br><br>
 
