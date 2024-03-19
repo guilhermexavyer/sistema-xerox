@@ -17,14 +17,14 @@
         $row_total = $resultado_total->fetch_assoc();
         $total_copias_nome = $row_total["total_copias_nome"];
 
-        echo "<h2>Total de cópias do(a) $nome entre $data_inicio e $data_fim: $total_copias_nome</h2>" . "<br>";
+        echo "<h2>Total de cópias de '$nome' entre $data_inicio e $data_fim: $total_copias_nome</h2>" . "<br>";
 
         $sql = "SELECT * FROM funcionarios WHERE nome = '$nome' AND dt BETWEEN '$data_inicio' AND '$data_fim' ORDER BY id DESC";
 
         $resultado = $mysqli->query($sql);
 
         if ($resultado->num_rows > 0) {
-            echo "<h2>Cópias do(a) $nome entre $data_inicio e $data_fim:</h2>";
+            echo "<h2>Cópias de '$nome' entre $data_inicio e $data_fim:</h2>";
             echo "<table border='1'>
                     <tr>
                         <th>ID</th>
@@ -43,7 +43,7 @@
             echo "</table>";
         }
         else {
-            echo "Nenhuma cópia registrada em nome de $nome entre $data_inicio e $data_fim.";
+            echo "Nenhuma cópia registrada em nome de '$nome' entre $data_inicio e $data_fim.";
         }
     }
 
@@ -71,8 +71,8 @@
     <div id="mensagem"></div>
 
     <br>
-    <a href="../../index.php">Início</a>
-    <a href="funcionarios.html">Consulta</a>
+    <a href="../../index.html">Início</a>
+    <a href="../consulta.html">Consulta</a>
 
     <script>
         $(document).ready(function(){

@@ -71,8 +71,8 @@
     <div id="mensagem"></div>
 
     <br>
-    <a href="../../index.php">Início</a>
-    <a href="ensino_fundamental_1.html">Consulta</a>
+    <a href="../../index.html">Início</a>
+    <a href="../consulta.html">Consulta</a>
 
     <script>
         $(document).ready(function(){

@@ -26,6 +26,6 @@
 </head>
 <body>
     <br>
-    <a href="../index.php">Voltar</a>
+    <a href="../cadastro.php">Voltar</a>
 </body>
 </html>
