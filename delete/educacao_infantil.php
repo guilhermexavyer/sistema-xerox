@@ -1,18 +1,18 @@
 <?php
-    require "../../conexao.php";
+    require "../views/conexao.php";
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if(isset($_POST['id'])) {
             $id = $_POST['id'];
 
-            $sql_select = "SELECT * FROM ensino_medio WHERE id = '$id'";
+            $sql_select = "SELECT * FROM educacao_infantil WHERE id = '$id'";
             $result = $mysqli->query($sql_select);
 
             if ($result->num_rows > 0) {
-                $sql = "DELETE FROM ensino_medio WHERE id = '$id'";
+                $sql = "DELETE FROM educacao_infantil WHERE id = '$id'";
                 
                 if ($mysqli->query($sql) === TRUE) {
-                    echo "Registro removido com sucesso";
+                    echo "Registro removido";
                 } else {
                     echo "Houve um erro ao remover os dados: " . $mysqli->error;
                 }

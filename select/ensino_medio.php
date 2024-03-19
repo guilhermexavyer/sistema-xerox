@@ -1,5 +1,5 @@
 <?php
-    require "../../conexao.php";
+    require "../views/conexao.php";
 
     $mensagem = "";
 
@@ -9,7 +9,7 @@
         $data_inicio = $_POST['data_inicio'];
         $data_fim = $_POST['data_fim'];
 
-        $sql_total = "SELECT SUM(qtd_copias) AS total_copias_turma FROM ensino_fundamental_2 
+        $sql_total = "SELECT SUM(qtd_copias) AS total_copias_turma FROM ensino_medio 
                     WHERE turma = '$turma' AND disciplina = '$disciplina'
                     AND dt BETWEEN '$data_inicio' AND '$data_fim'";
 
@@ -20,7 +20,7 @@
 
         echo "<h2>Total de cópias de $disciplina do $turma entre $data_inicio e $data_fim: $total_copias_turma</h2>" . "<br>";
 
-        $sql = "SELECT * FROM ensino_fundamental_2 WHERE turma = '$turma' AND disciplina = '$disciplina' AND dt BETWEEN '$data_inicio' AND '$data_fim' ORDER BY id DESC";
+        $sql = "SELECT * FROM ensino_medio WHERE turma = '$turma' AND disciplina = '$disciplina' AND dt BETWEEN '$data_inicio' AND '$data_fim' ORDER BY id DESC";
 
         $resultado = $mysqli->query($sql);
 
@@ -46,7 +46,7 @@
             echo "</table>";
         }
         else {
-            echo "Nenhuma cópia registrada no $turma de $disciplina entre $data_inicio e $data_fim.";
+            echo "Nenhuma cópia registrada no $turma de $disciplina no entre $data_inicio e $data_fim.";
         }
     }
 
@@ -62,7 +62,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <form id="delete_form" method="post" action="delete.php">
+    <form id="delete_form" method="post" action="../delete/ensino_medio.php">
         <h3>Remover registro</h3>
 
         <label>ID:</label>

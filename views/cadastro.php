@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/cadastro.css">
+    <link rel="stylesheet" href="../assets/css/cadastro_consulta.css">
     <title>Cadastro</title>
 </head>
 <body>
@@ -13,14 +13,16 @@
 
     <nav>
         <a href="index.html">Início</a>
-        <a href="select/consulta.html">Consulta</a>
+        <a href="consulta.php">Consulta</a>
     </nav>
 
     <main>
+        <h1>CADASTRO</h1>
+        
         <div class="container">
             <!-- EDUCAÇÃO INFANTIL -->
             <div>
-                <form action="insert/educacao_infantil.php" method="POST">
+                <form action="../insert/educacao_infantil.php" method="POST">
                     <h2>Educação Infantil</h2>
 
                     <label>Data:</label>
@@ -44,7 +46,7 @@
 
             <!-- ENSINO FUNDAMENTAL I -->
             <div>
-                <form action="insert/ensino_fundamental_1.php" method="POST">
+                <form action="../insert/ensino_fundamental_1.php" method="POST">
                     <h2>Ensino Fundamental I</h2>
 
                     <label>Data:</label>
@@ -73,7 +75,7 @@
         <div class="container">
             <!-- ENSINO FUNDAMENTAL II -->
             <div>
-                <form action="insert/ensino_fundamental_2.php" method="POST">
+                <form action="../insert/ensino_fundamental_2.php" method="POST">
                     <h2>Ensino Fundamental II</h2>
 
                     <label>Data:</label>
@@ -116,7 +118,7 @@
 
             <!-- ENSINO MÉDIO -->
             <div>
-                <form action="insert/ensino_medio.php" method="POST">
+                <form action="../insert/ensino_medio.php" method="POST">
                     <h2>Ensino Médio</h2>
 
                     <label>Data:</label>
@@ -161,7 +163,7 @@
         <br><br><br>
 
         <div>
-            <form action="insert/funcionarios.php" method="POST">
+            <form action="../insert/funcionarios.php" method="POST">
                 <h2>Funcionários</h2>
 
                 <label>Data:</label>

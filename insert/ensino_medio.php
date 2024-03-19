@@ -1,5 +1,5 @@
 <?php
-    require "../conexao.php";
+    require "../views/conexao.php";
 
     $dt = $_POST['dt'];
     $turma = $_POST['turma'];
@@ -26,6 +26,6 @@
 </head>
 <body>
     <br>
-    <a href="../cadastro.php">Voltar</a>
+    <a href="../views/cadastro.php">Voltar</a>
 </body>
 </html>

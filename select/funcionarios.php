@@ -1,5 +1,5 @@
 <?php
-    require "../../conexao.php";
+    require "../views/conexao.php";
 
     $mensagem = "";
 
@@ -59,7 +59,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <form id="delete_form" method="post" action="delete.php">
+    <form id="delete_form" method="post" action="../delete/funcionarios.php">
         <h3>Remover registro</h3>
 
         <label>ID:</label>

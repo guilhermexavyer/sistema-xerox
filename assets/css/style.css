@@ -7,27 +7,31 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    padding: 15px;
-    box-shadow: 0px 4px 5px 3px #6e6e6e42;
-    font-weight: 500;
-    min-height: 5vh;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-nav a {
-    padding: 5px;
+div {
+    padding: 20px;
+}
+
+.text {
+    text-align: center;
+}
+
+.link a {
     text-decoration: none;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 100px;
     transition: .1s;
-    margin-right: 10px;
+    font-weight: 500;
+    color: red;
 }
 
-nav a:hover {
-    background-color: blue;
+.link a:hover {
+    background-color: red;
     color: white;
 }
