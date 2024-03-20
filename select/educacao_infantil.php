@@ -10,6 +10,7 @@
 <body>
     <nav>
         <a href="../views/index.html">Início</a>
+        <a href="../views/cadastro.php">Cadastro</a>
         <a href="../views/consulta.php">Consulta</a>
     </nav>
 
