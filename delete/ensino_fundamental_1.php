@@ -12,7 +12,7 @@
                 $sql = "DELETE FROM ensino_fundamental_1 WHERE id = '$id'";
                 
                 if ($mysqli->query($sql) === TRUE) {
-                    echo "Registro removido com sucesso";
+                    echo "Registro removido";
                 } else {
                     echo "Houve um erro ao remover os dados: " . $mysqli->error;
                 }

@@ -47,21 +47,7 @@
         <div id="mensagem">RESULTADO</div>
     </form>
 
-    <script>
-        $(document).ready(function(){
-            $('#delete_form').submit(function(e){
-                e.preventDefault();
-                $.ajax({
-                    type: 'POST',
-                    url: $(this).attr('action'),
-                    data: $(this).serialize(),
-                    success: function(response){
-                        $('#mensagem').html(response);
-                    }
-                });
-            });
-        });
-    </script>
+    <script src="../assets/js/select.js"></script>
 
     <?php
         require "../views/conexao.php";
