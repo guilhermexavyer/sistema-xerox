@@ -42,16 +42,25 @@ nav a.ativo, nav a:hover, nav a:focus {
 }
 
 .mensagem-cabecalho {
-    padding: 10px;  
+    padding: 10px;
     background-color: #d3d3d3;
 }
 
 main {
-    height: 300px;
+    height: calc(90vh - 100px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#mensagem-temporaria {
+    background-color: #32d432;
+    color: white;
+    border-radius: 5px;
+    max-width: 170px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .cadastro-form {
@@ -97,33 +106,4 @@ input[type="date"], input[type="number"], select {
 #button:hover, #button:focus {
     background-color: #23a423;
     transform: scale(1.01);
-}
-
-.resultado-container {
-    text-align: center;
-}
-
-.resultado-total {
-    margin-top: 50px;
-}
-
-.resultado-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-.resultado-table th, .resultado-table td {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-.resultado-table th {
-    background-color: #f2f2f2;
-}
-
-.no-results {
-    font-style: italic;
-    color: #888888;
-    margin-top: 10px;
 }
