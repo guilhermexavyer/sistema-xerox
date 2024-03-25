@@ -90,25 +90,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Intercepta o envio do formulário de exclusão
             $('.cadastro-form').submit(function(event) {
-                // Impede o comportamento padrão do formulário (recarregar a página)
                 event.preventDefault();
 
-                // Obtém o valor do ID a ser excluído
                 var id = $(this).find('input[name="id"]').val();
 
-                // Envia uma solicitação AJAX para o script de exclusão
                 $.ajax({
                     type: 'POST',
                     url: 'delete_atividade.php',
                     data: { id: id },
                     success: function(response) {
-                        // Exibe a resposta do servidor (mensagem de sucesso ou erro)
                         alert(response);
-                        
-                        // Recarrega os dados na página, ou faça qualquer outra ação desejada
-                        // Por exemplo, atualizar a tabela de visualização após a exclusão
                         // window.location.reload();
                     }
                 });
@@ -117,4 +109,3 @@
     </script>
 </body>
 </html>
-

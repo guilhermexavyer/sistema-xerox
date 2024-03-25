@@ -10,7 +10,6 @@
 
         if ($mysqli->query($sql) === TRUE) {
             $mensagem = "Dados inseridos com sucesso";
-            // Definindo a variável para indicar que o cadastro foi realizado com sucesso
             echo "Cadastro Realizado";
         }
         else {

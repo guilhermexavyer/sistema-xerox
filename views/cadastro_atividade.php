@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../assets/img/ícone.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/cadastro.css">
-    <title>Cadastro</title>
+    <title>PrintSynk - Cad. Ativ.</title>
 </head>
 <body>
     <?php
@@ -22,14 +22,14 @@
             <a href="consulta_funcionario.php">Cons. Func.</a>
         </nav>
         <div class="mensagem-cabecalho">
-            <h3>Cadastro</h3>
+            <h3>Cadastro - Atividade</h3>
             <p>Preencha o formulário</p>
         </div>
     </header>
 
     <main>
         <form class="cadastro-form" method="POST" action="../php/insert_atividade.php">
-            <h4>CÓPIAS DE ATIVIDADE</h4>
+            <h4>CAD. CPS. DE ATIVIDADE</h4>
             <label for="">Data:</label>
             <input name="dt" type="date" required>
 
@@ -97,18 +97,14 @@
 
     <script>
         $(document).ready(function() {
-            // Intercepta o envio do formulário
             $('.cadastro-form').submit(function(event) {
-                // Impede o comportamento padrão do formulário (recarregar a página)
                 event.preventDefault();
 
-                // Obtém os valores dos campos do formulário
                 var dt = $(this).find('input[name="dt"]').val();
                 var turma = $(this).find('select[name="turma"]').val();
                 var disciplina = $(this).find('select[name="disciplina"]').val();
                 var n_copias = $(this).find('input[name="n_copias"]').val();
 
-                // Envia uma solicitação AJAX para o script de inserção
                 $.ajax({
                     type: 'POST',
                     url: '../php/insert_atividade.php',
@@ -119,13 +115,10 @@
                         n_copias: n_copias
                     },
                     success: function(response) {
-                        // Exibe o alerta de sucesso
                         alert("Cadastro realizado com sucesso!");
-                        // Limpa o formulário após o cadastro bem-sucedido
                         $('.cadastro-form')[0].reset();
                     },
                     error: function(xhr, status, error) {
-                        // Exibe a mensagem de erro
                         alert("Ocorreu um erro: " + error);
                     }
                 });

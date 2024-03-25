@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../assets/img/ícone.ico" type="image/x-icon">
     <link rel="stylesheet" href="../assets/css/consulta.css">
-    <title>Consulta</title>
+    <title>PrintSynk - Cons. Ativ.</title>
 </head>
 <body>
     <header>
@@ -18,14 +18,14 @@
             <a href="consulta_funcionario.php">Cons. Func.</a>
         </nav>
         <div class="mensagem-cabecalho">
-            <h3>Consulta</h3>
+            <h3>Consulta - Atividade</h3>
             <p>Preencha o formulário</p>
         </div>
     </header>
 
     <main>
         <form class="cadastro-form" method="POST" action="../php/select_atividade.php">
-            <h4>CONSULTA</h4>
+            <h4>CONS. CPS. DE ATIVIDADE</h4>
             <label for="">Turma:</label>
             <select name="turma" required>
                 <option value=""></option>
