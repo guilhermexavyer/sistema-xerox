@@ -56,7 +56,8 @@
                 <option value="EDUCAÇÃO INFANTIL">EDUCAÇÃO INFANTIL</option>
                 <option value="ENSINO FUNDAMENTAL I">ENSINO FUNDAMENTAL I</option>
                 <option value="Arte">Arte</option>
-                <option value="Ciências/Biologia">Ciências/Biologia</option>
+                <option value="Biologia">Biologia</option>
+                <option value="Ciências">Ciências</option>
                 <option value="Educação Financeira">Educação Financeira</option>
                 <option value="Educação Física">Educação Física</option>
                 <option value="Ensino Religioso">Ensino Religioso</option>
