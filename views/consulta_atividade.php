@@ -57,8 +57,10 @@
                 <option value="ENSINO FUNDAMENTAL I">ENSINO FUNDAMENTAL I</option>
                 <option value="Arte">Arte</option>
                 <option value="Ciências/Biologia">Ciências/Biologia</option>
+                <option value="Educação Financeira">Educação Financeira</option>
                 <option value="Educação Física">Educação Física</option>
                 <option value="Ensino Religioso">Ensino Religioso</option>
+                <option value="Espanhol">Espanhol</option>
                 <option value="Filosofia">Filosofia</option>
                 <option value="Física">Física</option>
                 <option value="Geografia">Geografia</option>
@@ -76,12 +78,12 @@
             </select>
 
             <label for="">Data inicial:</label>
-            <input name="data_inicial" type="date">
+            <input name="data_inicial" type="date" required>
 
             <label for="">Data final:</label>
-            <input name="data_final" type="date">
+            <input name="data_final" type="date" required>
 
-            <input id="button" type="submit" value="CONSULTAR   ">
+            <input id="button" type="submit" value="CONSULTAR">
         </form>
     </main>
 

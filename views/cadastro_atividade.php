@@ -65,8 +65,10 @@
                 <option value="ENSINO FUNDAMENTAL I">ENSINO FUNDAMENTAL I</option>
                 <option value="Arte">Arte</option>
                 <option value="Ciências/Biologia">Ciências/Biologia</option>
+                <option value="Educação Financeira">Educação Financeira</option>
                 <option value="Educação Física">Educação Física</option>
                 <option value="Ensino Religioso">Ensino Religioso</option>
+                <option value="Espanhol">Espanhol</option>
                 <option value="Filosofia">Filosofia</option>
                 <option value="Física">Física</option>
                 <option value="Geografia">Geografia</option>

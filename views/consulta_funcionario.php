@@ -49,12 +49,12 @@
             </select>
 
             <label for="">Data inicial:</label>
-            <input name="data_inicial" type="date">
+            <input name="data_inicial" type="date" required>
 
             <label for="">Data final:</label>
-            <input name="data_final" type="date">
+            <input name="data_final" type="date" required>
 
-            <input id="button" type="submit" value="CONSULTAR   ">
+            <input id="button" type="submit" value="CONSULTAR">
         </form>
     </main>
 
