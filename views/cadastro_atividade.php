@@ -84,6 +84,7 @@
                 <option value="Redação">Redação</option>
                 <option value="Sociologia">Sociologia</option>
                 <option value="Tecnologias Digitais">Tecnologias Digitais</option>
+                <option value="SAM/SAB">SAM/SAB</option>
             </select>
 
             <label for="">Nº de cópias:</label>
