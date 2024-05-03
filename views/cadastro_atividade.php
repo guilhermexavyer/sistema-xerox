@@ -16,10 +16,10 @@
     <header>
         <nav class="menu-cabecalho">
             <img src="../assets/img/logo_branca.png" alt="logo" id="icone-sistema" width="45">
-            <a href="cadastro_atividade.php" class="pagina-ativa">Cad. Ativ.</a>
-            <a href="consulta_atividade.php">Cons. Ativ.</a>
-            <a href="cadastro_funcionario.php">Cad. Func.</a>
-            <a href="consulta_funcionario.php">Cons. Func.</a>
+            <a href="cadastro_atividade.php" class="pagina-ativa">Cadastro Atividade</a>
+            <a href="consulta_atividade.php">Consulta Atividade</a>
+            <a href="cadastro_funcionario.php">Cadastro Funcionário</a>
+            <a href="consulta_funcionario.php">Consulta Funcionário</a>
         </nav>
         <div class="mensagem-cabecalho">
             <h3>Cadastro - Atividade</h3>
@@ -90,7 +90,7 @@
             <label for="">Nº de cópias:</label>
             <input name="n_copias" type="number" min="1" required>
 
-            <input id="button" type="submit" value="CADASTRAR">
+            <input class="button" type="submit" value="CADASTRAR">
         </form>
 
         

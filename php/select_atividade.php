@@ -16,10 +16,10 @@
     <header>
         <nav class="menu-cabecalho">
             <img src="../assets/img/logo_branca.png" alt="logo" id="icone-sistema" width="45">
-            <a href="../views/cadastro_atividade.php">Cad. Ativ.</a>
-            <a href="../views/consulta_atividade.php">Cons. Ativ.</a>
-            <a href="../views/cadastro_funcionario.php">Cad. Func.</a>
-            <a href="../views/consulta_funcionario.php">Cons. Func.</a>
+            <a href="../views/cadastro_atividade.php">Cadastro Atividade</a>
+            <a href="../views/consulta_atividade.php">Consulta Atividade</a>
+            <a href="../views/cadastro_funcionario.php">Cadastro Funcionário</a>
+            <a href="../views/consulta_funcionario.php">Consulta Funcionário</a>
         </nav>
         <div class="mensagem-cabecalho">
             <h3>Resultado</h3>

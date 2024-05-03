@@ -35,7 +35,13 @@ nav img {
     cursor: pointer;
 }
 
-nav a.ativo, nav a:hover, nav a:focus {
+nav a:hover, nav a:focus {
+    background-color: #38e638;
+    color: #166e16;
+    outline: none;
+}
+
+.pagina-ativa {
     background-color: #38e638;
     color: #166e16;
     outline: none;
@@ -52,15 +58,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-#mensagem-temporaria {
-    background-color: #32d432;
-    color: white;
-    border-radius: 5px;
-    max-width: 170px;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .cadastro-form {
@@ -93,7 +90,7 @@ input[type="date"], input[type="number"], select {
     height: 30px;
 }
 
-#button {
+.button {
     padding: 5px;
     cursor: pointer;
     border: none;
@@ -103,7 +100,7 @@ input[type="date"], input[type="number"], select {
     background-color: #2ebe2e;
 }
 
-#button:hover, #button:focus {
+.button:hover, .button:focus {
     background-color: #23a423;
     transform: scale(1.01);
 }
