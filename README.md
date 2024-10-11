@@ -1,1 +1,1 @@
-Este projeto está sendo desenvolvido para atender às necessidades do departamento de "Xerox" do "Colégio Nossa Senhora do Bom Conselho", localizado na cidade de Jataí, Goiás.
+Este projeto está sendo desenvolvido para atender às necessidades do departamento de "Xerox" do "Colégio Bom Conselho", localizado na cidade de Jataí, Goiás.
