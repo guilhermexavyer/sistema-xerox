@@ -1,3 +1,3 @@
-# Sistema para departamento de xerox
+# PrintSynk - Sistema de Departamento de Xerox
 
-Este projeto foi desenvolvido para atender às necessidades do departamento de **Xerox** do **Colégio Bom Conselho**, localizado em Jataí, Goiás.
+Projeto desenvolvido para o departamento de xerox do **Colégio Bom Conselho**, localizado em Jataí-GO.
